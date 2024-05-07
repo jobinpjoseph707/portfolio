@@ -1,5 +1,5 @@
 body{
-    background-image:url('../image/image1.jpg');
+    background-image:url('../image/image2.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     margin: 0%;
@@ -76,45 +76,10 @@ section{
     /* padding-right: -40px; */
     margin: 0%;
 }
-.content {
-    max-width: 500px;
-    padding-left: 70px;
-    color: #bab3b3;
-}
-.content h2 {
-    font-size: 3em;
+image{
+    width: 400px;
 }
 
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-@keyframes colorchange {
-    0% { color: rgb(160, 80, 167); }
-    50% { color: rgb(233, 121, 9); }
-    100% { color: rgb(160, 80, 167); }
-}
-  
-span {
-    animation: colorchange 5s linear infinite;
-}
-  
-.content h4 {
-    font-size: 2em;
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    /* color:#25af7cb0; */
-    background: linear-gradient(to right, rgb(230, 222, 229), rgb(218, 88, 18));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: monospace;
-    animation:typing 3.5s steps(40, end)infinite;
-}
-.content p {
-    padding: 10px 0 40px 0;
-    color: aliceblue;
-}
 .social-icons {
     position: absolute;
     bottom: 50px;
