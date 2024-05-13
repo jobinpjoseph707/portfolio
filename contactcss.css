@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+header{
+    background-color:rgb(126, 144, 144);
+}
+.logo {
+    font-size: 2em;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: rgb(36, 11, 11);
+    cursor: default;
+}
+.navigation {
+
+    display: flex;
+    justify-content:flex-start;
+}
+.navigation a{
+    text-decoration:none;
+    color: rgb(23, 19, 19);
+    padding: 2%;
+
+
+}
+
+.navigation a:hover {
+    color: #31b325;
+
+}
+@keyframes colorchange {
+    0% { color: rgb(3, 1, 29); }
+    100% { color: rgb(239, 246, 242); }
+}
+  
+.blink {
+    animation: colorchange 10s linear infinite;
+}
+.background1{
+    background-color:rgb(126, 144, 144);
+    height: 60vh;
+    width: 100%;
+}
+.background2{
+    background-color:white;
+    height: 30vh;
+    width: 100%;
+
+
+}
+@keyframes typing {
+    0% { width: 0; }
+    80% { width: 100%; }
+    100% { width: 100%; }
+}
+.background1 h4{
+    font-size: 1em;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    /* color:#25af7cb0; */
+    background:black;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: monospace;
+    animation:typing 3s steps(44, end)infinite;
+
+}
+
+
+.container {
+    position: absolute;
+    width: 500px;
+    top: 80px;
+    left: 500px;
+    margin-top: 50px;
+}
+
+h1 {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #495057;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.social-icons {
+    position: absolute;
+    left:20px;
+    top: 90vh;
+    /* align-items: baseline; */
+    align-items: center;
+}
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #7d2ae8;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #332348;
+    transition: .3s;
+}
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+.social-icons a i {
+    color: #fff;
+}
