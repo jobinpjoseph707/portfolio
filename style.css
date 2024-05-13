@@ -1,5 +1,6 @@
 body{
-    background-image:url('../image/image1.jpg');
+    /* background-image:url('../image/image1.jpg'); */
+    background-color: #000000;
     background-repeat: no-repeat;
     background-size:cover;
     margin: 0%;
@@ -26,36 +27,35 @@ header {
     color: rgb(179, 167, 167);
     cursor: default;
 }
+.imageindex img{
+    height: 100vh;
+    opacity: 70%;
+    justify-content:right;
+
+}
 
 .navigation {
 
     /* margin-top: 10%; */
     display: flex;
-    justify-content:space-evenly;
+    justify-content:flex-start;
+
+
+
     /* align-items: center; */
 
 }
-.navigation a {
-    background-color: rgb(95 75 97);
-    font-size: 1.2em;
-    color: #cec4ca;
+.navigation a{
     text-decoration:none;
-    border: 2px solid #322b3d;
-    border-radius: 10%;
-    padding: 2px 9px;
+    color: white;
+    padding: 2%;
 
-    /* background-size: cover; */
 
-    /* margin-right: 40px; */
-    /* margin-left: -300px; */
-    font-weight: 500;
-    transition: .3s;
 }
-.navigation a:hover {
-    color: #5025b3;
-    background-color: #0e0909;
-    border: 2px solid #000000;
 
+.navigation a:hover {
+    color: #31b325;
+  
 }
 .home {
     position: relative;
@@ -65,6 +65,8 @@ header {
     /* background-position: center; */
     display: flex;
     align-items: center;
+    justify-content:flex-end;
+
     /* left: 100px; 
     right: -100px; */
 }
@@ -77,8 +79,8 @@ section{
     margin: 0%;
 }
 .content {
-    max-width: 500px;
-    padding-left: 70px;
+    max-width: 675px;
+    padding-left: 55px;
     color: #bab3b3;
 }
 .content h2 {
@@ -86,9 +88,11 @@ section{
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    0% { width: 0; }
+    80% { width: 100%; }
+    100% { width: 100%; }
 }
+
 @keyframes colorchange {
     0% { color: rgb(160, 80, 167); }
     50% { color: rgb(233, 121, 9); }
@@ -105,11 +109,11 @@ span {
     white-space: nowrap;
     overflow: hidden;
     /* color:#25af7cb0; */
-    background: linear-gradient(to right, rgb(230, 222, 229), rgb(218, 88, 18));
+    background: linear-gradient(to right, rgb(230, 222, 229), rgb(249, 89, 3));
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: monospace;
-    animation:typing 3.5s steps(40, end)infinite;
+    animation:typing 3s steps(44, end)infinite;
 }
 .content p {
     padding: 10px 0 40px 0;
